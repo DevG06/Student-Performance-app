@@ -122,7 +122,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.artifacts
 .env
 .venv
 env/
@@ -140,6 +139,8 @@ venv.bak/
 
 # mkdocs documentation
 /site
+/catboost_info
+/logs
 
 # mypy
 .mypy_cache/
