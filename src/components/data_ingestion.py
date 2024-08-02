@@ -43,5 +43,6 @@ class DataIngestion:
 
             )
         except Exception as e:
+            logging.error(f"Error in prediction pipeline: {str(e)}")
             raise CustomException(e,sys)
         
