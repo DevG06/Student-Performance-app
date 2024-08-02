@@ -83,17 +83,10 @@ jobs:
         run: |
           docker pull 637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest
 
-      - name: Debug Docker Run Command
-        run: |
-          echo "docker run -d -p 8080:8080 --ipc=\"host\" --name student-performance -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e AWS_REGION=${{ secrets.AWS_REGION }} 637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest"
-
       - name: Run Docker Image to serve users
         run: |
-          docker run -d -p 8080:8080 --ipc="host" --name student-performance \
-            -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
-            -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
-            -e AWS_REGION=${{ secrets.AWS_REGION }} \
-            637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest
+          docker run -d -p 8080:8080 --ipc="host" --name student-performance -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e AWS_REGION=${{ secrets.AWS_REGION }} 637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest
+
 
       - name: Clean previous images and containers
         run: |
