@@ -52,8 +52,8 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
+          ECR_REGISTRY: 637423256316.dkr.ecr.ap-south-1.amazonaws.com
+          ECR_REPOSITORY: student-performance
           IMAGE_TAG: latest
         run: |
           # Build a docker container and push it to ECR so that it can be deployed to ECS.
@@ -81,7 +81,7 @@ jobs:
 
       - name: Pull latest image
         run: |
-          docker pull ${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
+          docker pull 637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest
 
       - name: Run Docker Image to serve users
         run: |
@@ -89,7 +89,7 @@ jobs:
             -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
             -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
             -e AWS_REGION=${{ secrets.AWS_REGION }} \
-            ${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
+            637423256316.dkr.ecr.ap-south-1.amazonaws.com/student-performance:latest
 
       - name: Clean previous images and containers
         run: |
