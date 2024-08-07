@@ -1,17 +1,15 @@
 # Student Performance Analysis
 
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Objectvies](#objectives)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Project Overview
+
 The Student Performance Analysis and Prediction project is an end-to-end machine learning application designed to analyze and predict students' performance in school based on various demographic and academic factors. The primary goal is to predict a student's math score using regression models, leveraging multiple features such as race, gender, reading score, writing score, and more. 
 
 ## Objectives
@@ -42,20 +40,27 @@ The Student Performance Analysis and Prediction project is an end-to-end machine
    - Deploy the application on AWS EC2 using Docker and AWS ECR to make it accessible to users.
    - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.
 
+## Project Structure
 
-## Installation
+├── .github/workflows  # CI/CD workflows
+├── artifacts          # Model artifacts and other files
+├── notebook           # Jupyter notebooks for EDA and training
+├── src                # Source code
+│   ├── __init__.py
+│   ├── components     # Data ingestion, transformation and training scripts 
+│   ├── pipeline       # Model training and prediction pipeline
+│   ├── utils.py       # Utility functions
+│   ├── exceptions.py  # Custom exceptions
+│   └── logger.py      # Custom logger
+├── templates          # HTML templates for the frontend
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── app.py             # Main Flask application
+├── requirements.txt   # Python dependencies
+└── setup.py           # Setup script
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Student-Performance-app.git
-   cd Student-Performance-app
-   ```
-2. Create a virtual environment and activate it:
-   ```bash
-   conda create -p venv python -y
-   conda activate ./venv
-   ```
-3. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
