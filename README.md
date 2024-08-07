@@ -4,8 +4,6 @@
 
 - [Project Overview](#project-overview)
 - [Objectvies](#objectives)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
 - [License](#license)
 
 ## Project Overview
@@ -39,26 +37,6 @@ The Student Performance Analysis and Prediction project is an end-to-end machine
 6. **Deployment**:
    - Deploy the application on AWS EC2 using Docker and AWS ECR to make it accessible to users.
    - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.
-
-## Project Structure
-
-├── .github/workflows  # CI/CD workflows
-├── artifacts          # Model artifacts and other files
-├── notebook           # Jupyter notebooks for EDA and training
-├── src                # Source code
-│   ├── __init__.py
-│   ├── components     # Data ingestion, transformation and training scripts 
-│   ├── pipeline       # Model training and prediction pipeline
-│   ├── utils.py       # Utility functions
-│   ├── exceptions.py  # Custom exceptions
-│   └── logger.py      # Custom logger
-├── templates          # HTML templates for the frontend
-├── .gitignore
-├── Dockerfile
-├── README.md
-├── app.py             # Main Flask application
-├── requirements.txt   # Python dependencies
-└── setup.py           # Setup script
 
 ## License
 
