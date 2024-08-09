@@ -11,6 +11,8 @@
 
 The Student Performance Analysis and Prediction project is an end-to-end machine learning application designed to analyze and predict students' performance in school based on various demographic and academic factors. The primary goal is to predict a student's math score using regression models, leveraging multiple features such as race, gender, reading score, writing score, and more. 
 
+![Screenshot 2024-08-10 000702](https://github.com/user-attachments/assets/908cdd0e-5942-4b14-b74a-e4fb289ad2ee)
+
 ## Objectives
 
 1. **Data Analysis and Visualization**:
