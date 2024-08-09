@@ -39,7 +39,7 @@ The Student Performance Analysis and Prediction project is an end-to-end machine
 
 6. **Deployment**:
    - Deploy the application on AWS EC2 using Docker and AWS ECR to make it accessible to users.
-   - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.\
+   - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.
 
 ## Technologies Used
 
