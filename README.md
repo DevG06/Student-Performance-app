@@ -4,6 +4,7 @@
 
 - [Project Overview](#project-overview)
 - [Objectvies](#objectives)
+- [Technologies Used](#technologies)
 - [License](#license)
 
 ## Project Overview
@@ -36,7 +37,17 @@ The Student Performance Analysis and Prediction project is an end-to-end machine
 
 6. **Deployment**:
    - Deploy the application on AWS EC2 using Docker and AWS ECR to make it accessible to users.
-   - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.
+   - Set up a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes.\
+
+## Technologies Used
+
+- Programming Language: Python
+- Data Analysis: Jupyter Notebook, Matplotlib, Seaborn
+- Machine Learning: Sklearn, XGBoost, CatBoost
+- Web Framework: Flask
+- Frontend: HTML, CSS
+- Deployment: AWS EC2, AWS ECR, Docker
+- CI/CD: GitHub Actions
 
 ## License
 
